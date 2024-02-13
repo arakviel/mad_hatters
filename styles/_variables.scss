@@ -1,0 +1,27 @@
+:root {
+  --color-dark: #23242c;
+  --color-dark-alt: #111111;
+  --color-light: #FFFFFF;
+  --color-accent: #967675;
+  --color-accent-alt: #f6ece8;
+  --color-gray: #9d8888;
+  --color-gray-alt: #CFADAC;
+  --border: 1px solid var(--color-gray-alt);
+  --color-decoration: #cdcdcd8d;
+  --border-radius: 0.5rem;
+  --shadow: 0 5px 0 0 var(--color-dark);
+  --font-family-heading: 'Playfair Display', serif;
+  --font-family-base: 'Poppins', sans-serif;
+  --container-width: 1141px;
+  --container-padding-x: 1rem;
+  --section-padding-y: 70px;
+  --transition-duration: 0.3s;
+
+  @include desktop {
+    --section-padding-y: 50px;
+  }
+
+  @include mobile {
+    --section-padding-y: 30px;
+  }
+}

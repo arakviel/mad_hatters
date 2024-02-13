@@ -1,0 +1,23 @@
+.decoration {
+  @include square(0.5rem);
+
+  &--accent {
+    color: var(--color-accent-alt);
+  }
+
+  &-lines {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: space-between;
+    max-width: 61.5rem;
+    height: inherit;
+    margin: 0 auto;
+  }
+
+  &-line {
+    z-index: -1;
+    width: 1px;
+    background-color: var(--color-decoration);
+  }
+}

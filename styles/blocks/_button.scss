@@ -1,0 +1,17 @@
+.button {
+  position: relative;
+  display: inline-flex;
+  padding: 1.25rem 2.5rem;
+  color: var(--color-accent);
+  background-color: white;
+  border: var(--border);
+  border-radius: var(--border-radius);
+
+  &::after {
+    position: absolute;
+    inset: 50% 10% 0;
+    z-index: -1;
+    content: '';
+    box-shadow: 0 1rem 2rem 0 #964e4c31;
+  }
+}

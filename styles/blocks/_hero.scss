@@ -1,0 +1,50 @@
+.hero {
+  &__main {
+    display: flex;
+    column-gap: 5rem;
+    justify-content: space-between;
+  }
+
+  &__left {
+  }
+
+  &__right {
+    position: relative;
+    margin-right: 8rem;
+  }
+
+  &__img {
+    margin-top: -5rem;
+  }
+
+  &__img--second {
+    position: absolute;
+    top: 9rem;
+    left: 10rem;
+    z-index: -1;
+  }
+
+  &__deocration-cricle {
+    position: absolute;
+    top: 4.5rem;
+    left: -8rem;
+    z-index: -1;
+    width: 15.475rem;
+    height: 15.475rem;
+    background-color: #fae2d66e;
+    border-radius: 9999px;
+
+    &--big {
+      top: -3rem;
+      left: -16rem;
+      width: 32.375rem;
+      height: 32.375rem;
+      background-color: transparent;
+      border: 1px solid var(--color-decoration);
+    }
+  }
+
+  &__sponsors {
+    margin-top: 20rem;
+  }
+}
