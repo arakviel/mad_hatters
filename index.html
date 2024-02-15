@@ -20,22 +20,22 @@
                     alt="декоративна частина сайту">
                 <h1 class="header__title">Mad Hatters</h1>
 
-                <nav class="header__menu">
-                    <ul class="header__list">
-                        <li class="header__item">
-                            <a class="header__link" href="#">For Men</a>
+                <nav class="header__menu menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">For Men</a>
                         </li>
-                        <li class="header__item">
-                            <a class="header__link" href="#">For Woman</a>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">For Woman</a>
                         </li>
-                        <li class="header__item">
-                            <a class="header__link" href="#">For Kids</a>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">For Kids</a>
                         </li>
-                        <li class="header__item">
-                            <a class="header__link" href="#">For Anyone</a>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">For Anyone</a>
                         </li>
-                        <li class="header__item">
-                            <a class="header__link" href="#">For No-one</a>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">For No-one</a>
                         </li>
                     </ul>
                 </nav>
@@ -104,7 +104,7 @@
                 </section>
 
                 <section class="become">
-                    <div class="become__inner container">
+                    <div class="become__inner">
                         <div class="become__left">
                             <img class="become__img" src="./images/sections/girl.jpg" alt="girl">
                         </div>
@@ -117,8 +117,8 @@
                 </section>
 
                 <section class="range">
-                    <div class="range__inner container">
-                        <header class="range__header action">
+                    <div class="range__inner">
+                        <header class="action action--center">
                             <span class="action__small">Hat’s that bring the fire</span>
                             <h1 class="action__heading">Our Range</h1>
                         </header>
@@ -197,13 +197,106 @@
                 </section>
 
                 <section class="quote">
-
+                    <div class="quote__decoration"></div>
+                    <div class="quote__decoration-inner"></div>
+                    <blockquote class="quote__block">
+                        In quoting others we cite ourselves
+                    </blockquote>
                 </section>
             </div>
+
+            <section class="subscribe">
+                <div class="subscribe__inner container">
+                    <header class="action action--center">
+                        <span class="action__small">Keep up-to-date on us</span>
+                        <h1 class="action__heading">Newsletter</h1>
+                    </header>
+
+                    <form class="subscribe__form" action="#" method="post">
+                        <label class="visually-hidden" for="email">Підписка на розсилку email повідомлень</label>
+                        <input class="subscribe__email" id="email" name="email" type="email"
+                            placeholder="Enter your email">
+                        <button class="subscribe__button button" type="submit">
+                            Submit
+                        </button>
+                    </form>
+                </div>
+            </section>
         </main>
 
         <footer class="footer">
+            <div class="footer__inner container">
+                <div class="footer__left">
+                    <div class="footer__block">
+                        <h3 class="footer__heading">
+                            <img class="footer__decoration decoration" src="./images/decorations/Decoration.svg"
+                                alt="декоративна частина сайту">
+                            Mad Hatters
+                        </h3>
+                        <p class="footer__text">Be better, be cooler, be a Mad <br> Hatter and sustainably matter.</p>
+                    </div>
 
+                    <address class="footer__copyright">
+                        Copyright 2012 Mad Hatters, Inc. Terms & Privacy
+                    </address>
+                </div>
+
+                <div class="footer__right">
+                    <div class="footer__col">
+                        <h4 class="footer__small-heading">
+                            <img class="footer__decoration decoration" src="./images/decorations/Decoration.svg"
+                                alt="декоративна частина сайту">
+                            Shop here
+                        </h4>
+
+                        <nav class="footer__menu menu">
+                            <ul class="menu__list menu__list--vertical">
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">For Men</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">For Woman</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">For Kids</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">For Anyone</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">For No-one</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="footer__col">
+                        <h4 class="footer__small-heading">
+                            <img class="footer__decoration decoration" src="./images/decorations/Decoration.svg"
+                                alt="декоративна частина сайту">
+                            The legals
+                        </h4>
+
+                        <nav class="footer__menu menu menu--vertical">
+                            <ul class="menu__list menu__list--vertical">
+                                <li class="menu__item ">
+                                    <a class="menu__link" href="#">Copyright</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">Privacy</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">Contact</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">Terms</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                </div>
+            </div>
         </footer>
     </body>
 

@@ -1,8 +1,9 @@
 .button {
   position: relative;
   display: inline-flex;
-  padding: 1.25rem 2.5rem;
+  padding: 1.25rem 4.4rem;
   color: var(--color-accent);
+  cursor: pointer;
   background-color: white;
   border: var(--border);
   border-radius: var(--border-radius);

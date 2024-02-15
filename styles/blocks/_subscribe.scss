@@ -1,0 +1,36 @@
+.subscribe {
+  position: relative;
+  padding: 0;
+  background-color: #F9F2EF;
+
+  &__inner {
+    padding-block: 5rem;
+    margin-top: 20rem;
+  }
+
+  &__form {
+    display: flex;
+    column-gap: 1rem;
+    margin-top: 5rem;
+  }
+
+  &__email {
+    flex: 1 1;
+    font-size: 1.75rem;
+    font-weight: 300;
+    color: var(--color-accent);
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-bottom: 2px solid #DCCBC6;
+    outline: none;
+
+    &::placeholder {
+      font-weight: 100;
+      color: #DCCBC6;
+    }
+  }
+
+  &__button {
+    z-index: 1;
+  }
+}
