@@ -8,6 +8,11 @@
   border: var(--border);
   border-radius: var(--border-radius);
 
+  @include mobile {
+    justify-content: center;
+    text-align: center;
+  }
+
   &::after {
     position: absolute;
     inset: 50% 10% 0;

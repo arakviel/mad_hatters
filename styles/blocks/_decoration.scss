@@ -5,9 +5,19 @@
     color: var(--color-accent-alt);
   }
 
+  &--mobile {
+    display: none;
+    align-self: center;
+
+    @include mobile {
+      display: block;
+    }
+  }
+
   &-lines {
     position: absolute;
     inset: 0;
+    z-index: -1;
     display: flex;
     justify-content: space-between;
     max-width: 61.5rem;
@@ -20,4 +30,5 @@
     width: 1px;
     background-color: var(--color-decoration);
   }
+
 }

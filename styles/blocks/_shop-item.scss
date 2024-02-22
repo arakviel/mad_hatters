@@ -5,6 +5,10 @@
 
   &--lowered {
     margin-top: 5rem;
+
+    @include mobile {
+      margin-top: 0;
+    }
   }
 
   &__img {

@@ -7,6 +7,10 @@
     flex-direction: column;
     align-items: center;
     margin-top: 1.75rem;
+
+    @include mobile {
+      align-items: stretch;
+    }
   }
 
   &__title {
@@ -16,6 +20,12 @@
     color: black;
     text-align: center;
     text-transform: uppercase;
+
+    @include mobile {
+      display: inline-flex;
+      column-gap: 0.5rem;
+      margin-top: 0;
+    }
   }
 
   &__menu {
@@ -25,5 +35,14 @@
   &__divider {
     margin-top: 2rem;
     border: 1px solid #0000001a;
+  }
+
+  &__for-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__burger-button {
   }
 }

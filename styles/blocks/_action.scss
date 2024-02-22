@@ -1,9 +1,19 @@
 .action {
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   &__small {
     color: var(--color-accent);
   }
 
   &__heading {
+    @include mobile-s {
+      font-size: 3rem;
+      text-align: center;
+    }
   }
 
   &__button {

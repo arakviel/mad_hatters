@@ -3,6 +3,17 @@
     display: flex;
     column-gap: 3rem;
     justify-content: space-between;
+
+
+
+    @include tablet {
+      column-gap: 0.5rem;
+    }
+
+    @include mobile {
+      flex-direction: column;
+      row-gap: 1rem;
+    }
   }
 
   &__item {
@@ -25,5 +36,10 @@
     margin-left: 4.3rem;
     color: var(--color-accent);
     text-wrap: balance;
+
+    @include tablet {
+      margin-top: 1.75rem;
+      margin-left: 2.3rem;
+    }
   }
 }

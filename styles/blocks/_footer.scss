@@ -1,11 +1,16 @@
 .footer {
-  padding: 10rem;
+  padding-block: 10rem;
   color: var(--color-light);
   background-color: var(--color-dark);
 
   &__inner {
     display: flex;
     justify-content: space-between;
+
+    @include mobile {
+      flex-direction: column;
+      row-gap: 2rem;
+    }
   }
 
   &__left {
@@ -34,6 +39,7 @@
   }
 
   &__text {
+    display: block;
     margin-top: 2rem;
     margin-left: 1.1rem;
     font-weight: 500;
@@ -51,6 +57,14 @@
     display: flex;
     column-gap: 8rem;
 
+    @include tablet {
+      column-gap: 2rem;
+    }
+
+    @include mobile {
+      column-gap: 0.5rem;
+      justify-content: space-between
+    }
   }
 
   &__col {

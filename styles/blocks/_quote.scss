@@ -3,11 +3,13 @@
 
   position: relative;
   padding: 0;
+  padding-bottom: 20rem;
 
   &__decoration {
     @include square(32.375rem);
     @include abs-center;
 
+    margin-top: -10rem;
     border: 1px solid var(--decoration-color);
     border-radius: 9999px;
   }
@@ -16,6 +18,7 @@
     @include square(21.25rem);
     @include abs-center;
 
+    margin-top: -10rem;
     border-radius: 9999px;
     box-shadow: 0 0 64px 0 var(--decoration-color);
   }
@@ -46,12 +49,20 @@
       display: inline-block;
       content: "”";
       transform: rotate(180deg);
+
+      @include tablet {
+        left: 0;
+      }
     }
 
     &::after {
       top: -0.2rem;
       right: 8.5rem;
       content: "”";
+
+      @include tablet {
+        right: 1rem;
+      }
     }
   }
 }
